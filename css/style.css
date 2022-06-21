@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    list-style: none;
 }
 
 /******** REGOLE GENERALI **************/
@@ -12,8 +14,25 @@
     --primary-color: #0c1014;
     --main-color: #14171d;
     --player-color: #212021;
+    --text-color: #5f6166;
     color: white;
 }
+
+/********* FONT AND TYPE *******/
+
+a:link, a:visited {
+
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+a:hover {
+
+    color: inherit;
+}
+/********* FONT AND TYPE *******/
+
 
 .container {
 
@@ -63,33 +82,33 @@ footer {
 
 .inner-sd {
 
-
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-height: 450px;
     line-height: 35px;
     overflow: hidden;
+    padding: 15px;
+    padding-bottom: 0px;
 }
 
 .top-sb {
 
     height:  calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
 }
 
 .bt-sb {
 
-    height: 80px;
+    height: 100px;
     background-color: black;
 }
 
 .playlist {
 
-    background-color: orange;
+
     display: flex;
     flex-direction: column;
-    height: calc(100% - 100px);
+    overflow: hidden;
 
 }
 
@@ -103,4 +122,19 @@ footer {
     overflow-y: auto;
     width: 100%;
 
+}
+
+/********** TOP-NAV */
+
+.nav ul li a img {
+
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.white-bar {
+
+    height: 1px;
+    background-color: white;
 }
