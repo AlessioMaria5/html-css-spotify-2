@@ -1,0 +1,63 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/******** REGOLE GENERALI **************/
+
+:root {
+
+    --primary-color: #0c1014;
+    --secondary-color: #14171D;
+}
+
+.container {
+
+    display: flex;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 160px);
+}
+
+#side-bar {
+
+    background-color: black;
+    width: 160px;
+    height: calc(100vh - 100px );
+
+}
+
+#call-a {
+
+    background-color: yellow;
+    width: 100%;
+    height: 100px;
+
+}
+
+#discovery {
+
+    background-color: red;
+    height: calc(100vh - 200px);
+    overflow: scroll;
+
+
+}
+
+footer {
+
+    height: 100px;
+    background-color: grey;
+}
+
+#player {
+
+
+}
+
